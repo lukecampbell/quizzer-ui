@@ -1,0 +1,33 @@
+{
+  "name": "quizzer-ui",
+  "version": "1.0.0",
+  "description": "Quizzer UI Application",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint src",
+    "compile": "browserify src/index.js -o build/app.js --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify"
+      ]
+    ]
+  },
+  "author": "Luke Campbell",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "eslint": "^5.12.0",
+    "eslint-plugin-react": "^7.12.3"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
